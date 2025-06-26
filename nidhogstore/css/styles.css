@@ -1,0 +1,402 @@
+/* === BASE === */
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+header .nidhogstore {
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(90deg, hsla(225, 78%, 59%, 1) 0%, hsla(197, 85%, 51%, 1) 100%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bagel Fat One", system-ui;
+    font-size: 2rem;
+}
+
+header .banner {
+    width: 100%;
+    height: auto;
+}
+
+header .banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    color: #fff;
+    background: linear-gradient(90deg, hsla(225, 78%, 59%, 1) 0%, hsla(197, 85%, 51%, 1) 100%);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    font-family: "Coiny", system-ui;
+    text-shadow: 1px 2px 2px #000;
+}
+
+nav ul li {
+    margin-left: 30px;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff6b;
+    border-radius: 3px;
+    transition: 0.5s;
+}
+
+main {
+    text-align: center;
+    margin-top: 50px;
+    flex: 1;
+}
+
+main h1 {
+    display: inline-block;
+    background-color: #b8b3b3bb;
+    font-size: 25px;
+    border-radius: 7px;
+    border: solid 1px #313131bb;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main .container {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+main .container article {
+    margin-top: 30px;
+    width: 360px;
+}
+
+main .container article img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00000040;
+}
+
+main .container article .buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+main .container article a {
+    display: block;
+    width: 80%;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #678fc4;
+    margin: 8px auto 0;
+    font-family: "Concert One", sans-serif;
+    font-size: 1.6rem;
+    box-shadow: #000 5px 5px 10px;
+}
+
+footer {
+    background: linear-gradient(90deg, hsla(225, 78%, 59%, 1) 0%, hsla(197, 85%, 51%, 1) 100%);
+    padding: 20px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+footer .cards img {
+    width: 200px;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-family: "Concert One", sans-serif;
+    color: #000000c5;
+    font-size: 1.5rem;
+}
+
+footer #copy {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* === MEDIA QUERIES === */
+
+/* ✅ 2K MONITOR */
+@media (min-width: 2560px) {
+  html {
+    font-size: 115%;
+  }
+
+  header .nidhogstore {
+    font-size: 3rem;
+    height: 90px;
+  }
+
+  header nav {
+    height: 70px;
+  }
+
+  nav a {
+    font-size: 2rem;
+  }
+
+  main h1 {
+    font-size: 2rem;
+    padding: 20px;
+  }
+
+  main .container article {
+    width: 420px;
+  }
+
+  main .container article a {
+    font-size: 2rem;
+    padding: 18px;
+  }
+
+  footer .cards img {
+    width: 250px;
+  }
+
+  footer p {
+    font-size: 2rem;
+  }
+
+  footer #copy {
+    font-size: 1.2rem;
+  }
+}
+
+/* ✅ 4K MONITOR */
+@media (min-width: 3840px) {
+  html {
+    font-size: 130%;
+  }
+
+  header .nidhogstore {
+    font-size: 3.5rem;
+    height: 100px;
+  }
+
+  header nav {
+    height: 80px;
+  }
+
+  nav a {
+    font-size: 2.3rem;
+  }
+
+  main h1 {
+    font-size: 2.2rem;
+    padding: 25px;
+  }
+
+  main .container article {
+    width: 500px;
+  }
+
+  main .container article a {
+    font-size: 2.2rem;
+    padding: 22px;
+  }
+
+  footer .cards img {
+    width: 300px;
+  }
+
+  footer p {
+    font-size: 2.2rem;
+  }
+
+  footer #copy {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-width: 480px) {
+  header .nidhogstore {
+    font-size: 1.4rem;
+    height: 60px;
+  }
+
+  header nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 1.2rem;
+  }
+
+  main h1 {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  main .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main .container article {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+  main .container article img {
+    width: 100%;
+  }
+
+  main .container article a {
+    width: 90%;
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+
+  footer .cards img {
+    width: 150px;
+  }
+
+  footer p {
+    font-size: 1.2rem;
+  }
+
+  footer #copy {
+    font-size: 0.9rem;
+  }
+}
+
+/* 📲 Celulares médios (até 768px) */
+@media (max-width: 768px) {
+  header .nidhogstore {
+    font-size: 1.6rem;
+  }
+
+  nav a {
+    font-size: 1.3rem;
+  }
+
+  main h1 {
+    font-size: 1.3rem;
+  }
+
+  main .container article {
+    width: 80%;
+  }
+
+  main .container article a {
+    font-size: 1.4rem;
+  }
+
+  footer .cards img {
+    width: 180px;
+  }
+
+  footer p {
+    font-size: 1.4rem;
+  }
+
+  footer #copy {
+    font-size: 1rem;
+  }
+}
+
+/* 📘 Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  header .nidhogstore {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    font-size: 1.5rem;
+  }
+
+  main h1 {
+    font-size: 1.5rem;
+  }
+
+  main .container article {
+    width: 85%;
+  }
+
+  main .container article a {
+    font-size: 1.6rem;
+  }
+
+  footer .cards img {
+    width: 200px;
+  }
+
+  footer p {
+    font-size: 1.5rem;
+  }
+
+  footer #copy {
+    font-size: 1rem;
+  }
+}
