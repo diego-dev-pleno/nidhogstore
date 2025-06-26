@@ -1,1 +1,1 @@
-[# nidhogstore](https://nidhogstore.netlify.app/)
+[Nidhogg Store](https://nidhoggstore.netlify.app/)
