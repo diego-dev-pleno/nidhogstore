@@ -134,16 +134,27 @@ main .container article .buttons {
 main .container article a {
     display: block;
     width: 80%;
-    border: solid 1px #000;
-    border-radius: 5px;
+    border: 1px solid #0078D7;
+    border-radius: 12px;
     padding: 12px;
     color: #fff;
     text-decoration: none;
-    background-color: #678fc4;
-    margin: 8px auto 0;
-    font-family: "Concert One", sans-serif;
-    font-size: 1.6rem;
-    box-shadow: #000 5px 5px 10px;
+    background-color: #4A90E2;
+    margin: 10px auto 0;
+    font-family: "Coiny", system-ui;
+    font-size: 1.4rem;
+    box-shadow: 0 6px 0 #003366;
+}
+
+main .container article a:hover {
+  transform: scale(1.03);
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  background-color: #0056b3;
+}
+
+main .container article a:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #002244;
 }
 
 footer {
